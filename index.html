@@ -149,6 +149,37 @@ font-size:1.1rem;
 }
 
 
+.hero-images{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-bottom:40px;
+flex-wrap:wrap;
+}
+
+.hero-images img{
+width:220px;
+height:360px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+filter:grayscale(100%) contrast(110%);
+opacity:.5;
+
+
+box-shadow:0 10px 30px rgba(0,0,0,.4);
+
+transition:.3s;
+}
+
+.hero-images img:hover{
+opacity:1;
+transform:translateY(-8px);
+}
+
+
 </style>
 </head>
 
