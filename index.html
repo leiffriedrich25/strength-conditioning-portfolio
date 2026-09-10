@@ -8,71 +8,66 @@
 
 <style>
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800;900&display=swap');
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 }
 
-body{
-font-family:Arial, Helvetica, sans-serif;
-background:#E7D6B4;
-color:#111111;
-line-height:1.7;
+html{
+scroll-behavior:smooth;
 }
 
-header{
+body{
+font-family:'Montserrat',sans-serif;
+background:#F5E8C8;
+color:#121212;
+}
+
+.hero{
+height:100vh;
 background:#111111;
 color:white;
-padding:80px 20px;
+display:flex;
+justify-content:center;
+align-items:center;
 text-align:center;
+padding:20px;
 }
 
-header h1{
-font-size:4rem;
-letter-spacing:4px;
+.hero-content h1{
+font-size:6rem;
+font-weight:900;
+letter-spacing:10px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:1.3rem;
+font-weight:300;
+letter-spacing:2px;
+}
+
+.section{
+padding:90px 10%;
+}
+
+.section h2{
+font-size:3rem;
+font-weight:800;
+margin-bottom:30px;
 text-transform:uppercase;
 }
 
-header p{
-margin-top:10px;
+.about{
 font-size:1.2rem;
+max-width:900px;
+line-height:1.9;
 }
 
-nav{
-background:#222;
-padding:18px;
-text-align:center;
-position:sticky;
-top:0;
-z-index:100;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-font-weight:bold;
-font-size:1rem;
-}
-
-nav a:hover{
-opacity:.7;
-}
-
-section{
-max-width:1200px;
-margin:auto;
-padding:60px 20px;
-}
-
-h2{
-font-size:2.2rem;
-margin-bottom:25px;
-text-transform:uppercase;
-}
-
-.card-grid{
+.grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
@@ -80,29 +75,56 @@ gap:25px;
 
 .card{
 background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 4px 10px rgba(0,0,0,.12);
+padding:30px;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card h3{
-margin-bottom:10px;
-color:#111111;
+margin-bottom:15px;
+font-size:1.3rem;
+font-weight:700;
 }
 
-.hero{
-max-width:900px;
-margin:auto;
-text-align:center;
-font-size:1.15rem;
+.card p{
+line-height:1.7;
+}
+
+.philosophy{
+background:#111111;
+color:white;
+}
+
+.philosophy h2{
+color:white;
+}
+
+.philosophy-card{
+background:#1d1d1d;
+padding:25px;
+border-radius:15px;
+}
+
+.philosophy-card h3{
+margin-bottom:10px;
 }
 
 footer{
+text-align:center;
+padding:60px 20px;
 background:#111111;
 color:white;
-text-align:center;
-padding:35px;
-margin-top:40px;
+}
+
+.small{
+font-size:.95rem;
+opacity:.8;
+margin-top:10px;
 }
 
 </style>
@@ -110,208 +132,160 @@ margin-top:40px;
 
 <body>
 
-<header>
-<h1>Leif Friedrich</h1>
+<section class="hero">
+
+<div class="hero-content">
+<h1>LEIF FRIEDRICH</h1>
 <p>Strength & Conditioning Portfolio</p>
 <p>Concordia University Nebraska</p>
-</header>
-
-<nav>
-#aboutAbout</a>
-#trainingTraining</a>
-#developmentAthlete Development</a>
-#articlesArticles</a>
-#philosophyPhilosophy</a>
-</nav>
-
-<section id="about">
-
-<h2>About Me</h2>
-
-<div class="hero">
-<p>
-Welcome to my Strength & Conditioning Portfolio.
-This website showcases coursework, coaching concepts,
-training resources, and professional development materials
-completed throughout my education at Concordia University Nebraska.
-</p>
 </div>
 
 </section>
 
-<section id="training">
+<section class="section">
+
+<h2>About Me</h2>
+
+<p class="about">
+Welcome to my Strength & Conditioning Portfolio.
+This site serves as a collection of coursework, training concepts,
+research, and coaching philosophies developed throughout my education
+at Concordia University Nebraska. My goal is to continually learn
+how to improve athletic performance, reduce injury risk, and help
+athletes reach their full potential through evidence-based training.
+</p>
+
+</section>
+
+<section class="section">
 
 <h2>Training Methods</h2>
 
-<div class="card-grid">
+<div class="grid">
 
 <div class="card">
 <h3>Warm-Up</h3>
-<p>Movement preparation, dynamic warm-ups, strength warm-ups, and pre-practice activation routines.</p>
+<p>Dynamic warm-ups, movement preparation, activation, and readiness training.</p>
 </div>
 
 <div class="card">
-<h3>Flexibility & Mobility</h3>
-<p>Strategies to improve movement quality, range of motion, and long-term athletic performance.</p>
+<h3>Mobility & Flexibility</h3>
+<p>Improving movement quality, joint motion, and athletic durability.</p>
 </div>
 
 <div class="card">
-<h3>Testing</h3>
-<p>Performance assessments, evaluation methods, and athlete testing batteries.</p>
+<h3>Testing & Evaluation</h3>
+<p>Performance assessment and athlete monitoring strategies.</p>
 </div>
 
 <div class="card">
 <h3>Resistance Training</h3>
-<p>Exercise selection, movement categories, strength development, and program implementation.</p>
+<p>Strength development through progressive and structured programming.</p>
 </div>
 
 <div class="card">
 <h3>Plyometrics</h3>
-<p>Explosive jump training, landing mechanics, and power development programs.</p>
+<p>Jump training and explosive power development.</p>
 </div>
 
 <div class="card">
 <h3>Speed & Agility</h3>
-<p>Acceleration, deceleration, change-of-direction, and athletic movement development.</p>
+<p>Acceleration, deceleration, and change-of-direction training.</p>
 </div>
 
 <div class="card">
-<h3>Aerobic Endurance</h3>
-<p>Conditioning methods and strategies to improve work capacity and performance.</p>
+<h3>Conditioning</h3>
+<p>Building work capacity and sport-specific endurance.</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="development">
+<section class="section">
 
 <h2>Athlete Development</h2>
 
-<div class="card-grid">
+<div class="grid">
 
 <div class="card">
 <h3>Nutrition</h3>
-<p>Fueling performance through proper nutrition, hydration, and athlete education.</p>
+<p>Supporting adaptation, recovery, and performance through nutrition.</p>
 </div>
 
 <div class="card">
 <h3>Psychology</h3>
-<p>Motivation, confidence, focus, leadership, and mental performance concepts.</p>
+<p>Developing confidence, focus, consistency, and resilience.</p>
 </div>
 
 <div class="card">
 <h3>Recovery</h3>
-<p>Sleep, recovery techniques, stress management, and performance restoration.</p>
+<p>Sleep, hydration, recovery modalities, and fatigue management.</p>
 </div>
 
 <div class="card">
 <h3>Rehabilitation</h3>
-<p>Return-to-play concepts, injury prevention, and athlete readiness strategies.</p>
+<p>Return-to-play concepts and injury prevention.</p>
 </div>
 
 <div class="card">
 <h3>Special Populations</h3>
-<p>Considerations for youth athletes, older adults, and adaptive populations.</p>
+<p>Training modifications for unique athlete needs.</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="articles">
-
-<h2>Research Articles</h2>
-
-<div class="card-grid">
-
-<div class="card">
-<h3>Article 1</h3>
-<p>Add article summary and reference here.</p>
-</div>
-
-<div class="card">
-<h3>Article 2</h3>
-<p>Add article summary and reference here.</p>
-</div>
-
-<div class="card">
-<h3>Article 3</h3>
-<p>Add article summary and reference here.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="philosophy">
+<section class="section philosophy">
 
 <h2>Strength & Conditioning Philosophy</h2>
 
-<div class="card-grid">
+<div class="grid">
 
-<div class="card">
+<div class="philosophy-card">
 <h3>Compound Movements</h3>
-<p>
-Prioritize multi-joint exercises utilizing multiple muscle groups, unilateral and bilateral movements,
-and training across all planes of motion.
-</p>
+<p>Prioritize movements involving multiple joints and muscle groups in all planes of motion.</p>
 </div>
 
-<div class="card">
+<div class="philosophy-card">
 <h3>Multi-Phase Programming</h3>
-<p>
-Use structured phases such as hypertrophy, strength, power, and speed development to maximize athletic adaptation.
-</p>
+<p>Use hypertrophy, strength, power, and speed phases to build athletic performance.</p>
 </div>
 
-<div class="card">
-<h3>Personalized Training</h3>
-<p>
-Evaluate athletes individually, identify strengths and weaknesses, and design targeted programming.
-</p>
+<div class="philosophy-card">
+<h3>Individualized Training</h3>
+<p>Identify strengths and weaknesses and program according to athlete needs.</p>
 </div>
 
-<div class="card">
+<div class="philosophy-card">
 <h3>Explosiveness & Power</h3>
-<p>
-Develop force production through strength training, plyometrics, jump training, and medicine ball throws.
-</p>
+<p>Develop force production through strength training, plyometrics, and medicine ball work.</p>
 </div>
 
-<div class="card">
-<h3>Speed, Quickness & Athleticism</h3>
-<p>
-Focus on reaction ability, acceleration, body awareness, rhythm, movement efficiency, and athletic development.
-</p>
+<div class="philosophy-card">
+<h3>Athleticism</h3>
+<p>Train speed, quickness, body awareness, rhythm, and movement efficiency.</p>
 </div>
 
-<div class="card">
-<h3>Sport Specific Transfer</h3>
-<p>
-Train athletes to carry strength and power gains from the weight room into competition and sport performance.
-</p>
+<div class="philosophy-card">
+<h3>Sport Transfer</h3>
+<p>Ensure gains from training transfer directly to competition and sport performance.</p>
 </div>
 
-<div class="card">
+<div class="philosophy-card">
 <h3>Mobility & Stability</h3>
-<p>
-Develop mobility, flexibility, tissue quality, joint control, and movement efficiency while reducing injury risk.
-</p>
+<p>Improve movement quality while reducing injury risk and enhancing performance.</p>
 </div>
 
-<div class="card">
+<div class="philosophy-card">
 <h3>Nutrition & Recovery</h3>
-<p>
-Prioritize sleep, nutrition, hydration, supplementation when appropriate, and strategic deload periods.
-</p>
+<p>Prioritize sleep, nutrition, hydration, and strategic recovery periods.</p>
 </div>
 
-<div class="card">
+<div class="philosophy-card">
 <h3>Culture & Mentality</h3>
-<p>
-Build accountability, discipline, consistency, effort, leadership, and selflessness within athletes.
-</p>
+<p>Effort, discipline, accountability, consistency, and selflessness drive success.</p>
 </div>
 
 </div>
@@ -320,10 +294,11 @@ Build accountability, discipline, consistency, effort, leadership, and selflessn
 
 <footer>
 
-<h3>Leif Friedrich</h3>
+<h2>Leif Friedrich</h2>
 
-<p>
-Strength & Conditioning Portfolio<br>
+<p>Strength & Conditioning Portfolio</p>
+
+<p class="small">
 Concordia University Nebraska
 </p>
 
