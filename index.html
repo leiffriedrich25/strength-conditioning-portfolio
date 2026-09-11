@@ -51,22 +51,19 @@ text-transform:uppercase;
 
 .about-container {
     display: flex;
-    align-items: center;
-    gap: 50px;
+    align-items: flex-start;
+    gap: 40px;
 }
 
-.headshot {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+.about-container img {
+    width: 220px;
+    height: 220px;
     object-fit: cover;
-
-    border: 6px solid #D4AF37;
-
-    box-shadow:
-        0 10px 25px rgba(0,0,0,.15),
-        0 0 0 10px rgba(212,175,55,.15);
+    border-radius: 50%;
+    border: 5px solid #D4AF37;
+    flex-shrink: 0;
 }
+
 
 
 .grid{
