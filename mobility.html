@@ -30,13 +30,110 @@ border-radius:15px;
 box-shadow:0 6px 15px rgba(0,0,0,.08);
 }
 
-.back{
+.return-card{
 display:inline-block;
-margin-top:40px;
+
+background:white;
+
+padding:20px 35px;
+
+border-radius:18px;
+
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+
 text-decoration:none;
-font-weight:700;
+
 color:#121212;
+
+font-weight:700;
+
+font-size:1.2rem;
+
+transition:
+background-color .3s ease,
+transform .3s ease,
+box-shadow .3s ease;
+
 }
+
+.return-card:hover{
+transform:translateY(-5px);
+
+background:#ECECEC;
+
+box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+
+
+
+ul {
+    text-align: left;
+    max-width: 500px;
+    margin: 10px auto;
+    padding-left: 0px;
+}
+
+ul {
+    position: relative;
+    left: -200px;
+}
+ 
+    
+li {
+    margin: 10px 0;
+}
+
+li a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+
+    
+.stretch-list {
+    list-style: none;
+    padding-left: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px 40px;
+}
+
+.stretch-list li {
+    margin: 12px 0;
+}
+
+.stretch-list a {
+    display: inline-block;
+    padding: 12px 20px;
+    width: 250px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.stretch-list a:hover {
+    background: #D4AF37; /* gold */
+    color: black;
+    text-decoration: none;
+    transform: translateX(12px);
+    box-shadow: 0 8px 20px rgba(212,175,55,0.4);
+}
+
+
 
 </style>
 
@@ -44,50 +141,95 @@ color:#121212;
 
 <body>
 
-<h1>Mobility & Flexibility</h1>
+    <h1>Warm-Up Resources</h1>
 
-<p>Add videos, coaching points, PDFs, assignments, images, and resources here.</p>
+    <p>Click any stretch below to view a demonstration video.</p>
 
-<div class="resource">
-<h2>Ankles</h2>
-<p>Description goes here.</p>
-</div>
+    <div class="resource">
+        <h2>Strength Training</h2>
 
+        <h3>Static Stretches</h3>
+       <ul class="stretch-list">
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
 
-<div class="resource">
-<h2>Hips</h2>
-<p>Description goes here.</p>
-</div>
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
 
-<div class="resource">
-<h2>Sagittal Spine</h2>
-<p>Description goes here.</p>
-</div>
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
 
-<div class="resource">
-<h2>Frontal Spine</h2>
-<p>Description goes here.</p>
-</div>
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
 
-<div class="resource">
-<h2>Transverse Spine</h2>
-<p>Description goes here.</p>
-</div>
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
 
-<div class="resource">
-<h2>Shoulders</h2>
-<p>Description goes here.</p>
-</div>
-
-<div class="resource">
-<h2>Elbows & Wrists</h2>
-<p>Description goes here.</p>
-</div>
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
+</ul>
 
 
-<a href="index.html" class="back">
-← Return to Portfolio
+        <h3>Dynamic Stretches</h3>
+        <ul class="stretch-list">
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
+
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
+
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
+
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
+
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
+
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
+</ul>
+
+    </div>
+
+    <div class="resource">
+        <h2>Pre-Practice</h2>
+
+        <h3>Dynamic Warm-Up</h3>
+    <ul class="stretch-list">
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
+
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
+
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
+
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
+
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
+
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
+</ul>
+
+
+        <h3>Static Recovery Stretches</h3>
+    
+
+<ul class="stretch-list">
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
+
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
+
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
+
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
+
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
+
+    <li><a href="INSERT_YOUTUBE_LINK_HERE" target="_blank">INSERT EXERCISE NAME HERE</a></li>
+</ul>
+
+        
+    </div>
+
+
+
+
+<a href="index.html" class="return-card">
+
+<h3>← Return to Portfolio</h3>
+
+
 </a>
+
 
 
 </body>
